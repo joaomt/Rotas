@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    >
+
+    <RadioButton
+        android:id="@+id/rb_rua_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/fab_entrega"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:drawableEnd="@drawable/ic_home_orc_roxo"
+        android:drawablePadding="5dp"
+        android:clickable="false"
+        android:drawableRight="@drawable/ic_home_orc_roxo"
+        android:layoutDirection="rtl"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:text="Rua Antonio Zancanela 68"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_bairro_list"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb_rua_list"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="45dp"
+        android:text="Satelite Ires 3 - Campinas/sp" />
+</LinearLayout>

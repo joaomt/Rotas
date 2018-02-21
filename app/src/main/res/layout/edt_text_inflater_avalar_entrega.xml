@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+tools:context="com.pharmamobi.joao.rotas.FragmentConta"
+android:id="@+id/layout_edt_text"
+    >
+<EditText
+    android:id="@+id/edt_avaliar_inflate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_login"
+    android:hint="Descreva o que aconteceu..."
+    android:minHeight="40dp"
+    android:textColor="@color/preto" />
+</RelativeLayout>

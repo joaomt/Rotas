@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pharma Mobi</string>
+    <string name="cadastro">Faça agora seu cadastro.</string>
+    <string name="action_settings">title</string>
+    <string name="action_pharmamobi">exemplo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">269478456797711</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="direcionsApiKey">AIzaSyCrNmTbLj2I8tq9VUQkoQkXDJt1na61fvM</string>
+</resources>

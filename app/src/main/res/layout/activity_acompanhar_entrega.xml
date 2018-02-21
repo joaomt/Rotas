@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_acompanhar_entrega"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_round_corners"
+            android:layout_margin="14dp"
+            android:elevation="5dp"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_che"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Chegada estimada:"
+            android:textSize="28sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_timer"
+                android:layout_toLeftOf="@+id/txt_chegada_estimada"
+                android:layout_toStartOf="@+id/txt_chegada_estimada"
+                android:layout_alignTop="@+id/txt_chegada_estimada"
+                android:layout_alignBottom="@+id/txt_chegada_estimada"/>
+
+        <TextView
+            android:id="@+id/txt_chegada_estimada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_che"
+            android:layout_centerHorizontal="true"
+            android:text="15:45"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txt_hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_che"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@+id/txt_chegada_estimada"
+            android:layout_toRightOf="@+id/txt_chegada_estimada"
+            android:text="hrs"
+            android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/view_spacing" />
+
+        <TextView
+            android:id="@+id/txt_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:textSize="20sp"
+            android:text="Endereço para recebimento"
+            android:textColor="@color/preto"/>
+
+        <TextView
+            android:id="@+id/txt_endereco_entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edit_text_login"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Rua Antonio Zancanella, n° 68, Satelite Iris 3, Campinas - SP"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/view_spacing" />
+
+        <TextView
+            android:id="@+id/txt_qtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:text="Entregas a serem feitas antes da sua"
+            android:textColor="@color/preto"/>
+
+        <TextView
+            android:id="@+id/txt_qtd_entregas_faltantes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edit_text_login"
+            android:layout_gravity="center_horizontal"
+            android:padding="6dp"
+            android:text="11"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/view_spacing" />
+
+        <TextView
+            android:id="@+id/txt_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Veja a localização de sua entrega"
+            android:textColor="@color/preto"
+            android:textSize="23sp" />
+        <ImageView
+            android:id="@+id/img_google"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_login"
+            android:scaleType="center"
+            android:src="@drawable/googlemap" />
+        <TextView
+            android:id="@+id/txt_info_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#28989c"
+            android:text=" Por motivos de privacidade, você só podera ver a localização de sua entrega quando for a sua em que estiver sendo entregue." />
+    </LinearLayout>
+</ScrollView>

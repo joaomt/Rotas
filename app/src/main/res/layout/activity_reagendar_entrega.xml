@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_avaliar_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/toolbar_round_corners"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_achou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Tentativas de entregas:"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_qtd_entregas_faltantes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit_text_login"
+                android:padding="6dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/preto"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_spacing" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_retirar_loja"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_corner_button_off"
+                    android:text="Retirar"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_reagendar"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_corner_button_off_left"
+                    android:text="Reagendar"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:id="@+id/ll_reagendar">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Qual data deseja receber ?"
+                        android:textSize="22sp" />
+                    <ImageButton
+                        android:id="@+id/btn_reagendar_calendario"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/btn_calendario"
+                        android:clickable="true"
+                        android:longClickable="true" />
+                    <TextView
+                        android:id="@+id/txt_data_agendada_info"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="Data agendada"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/txt_data_agendada"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="/   /"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/ll_retirar">
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="Em qual loja disponivel deseja retirar?"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_1"
+                        android:text="Francisco Glicério, 1023, Centro - Campinas - sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_1"
+                        android:layout_centerHorizontal="true"
+                        android:text="Av Souza de Queiroz, 38, Centro - Valinhos - sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rb_2"
+                        android:layout_centerHorizontal="true"
+                        android:text="Rua Maria Monteiro, 688, Cambui - Campinas - sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_spacing" />
+
+            <LinearLayout
+                android:id="@+id/RL_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_salvar_alt"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bt_salvar_edicoes" />
+
+                    <TextView
+                        android:id="@+id/txt_bt_salvar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Salvar" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_cancel_alt"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bt_cancelar_edicoes" />
+
+                    <TextView
+                        android:id="@+id/txt_bt_cancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descartar" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout><!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="center_horizontal"--><!--android:layout_marginTop="15dp">-->
+
+    <!--<ViewStub--><!--android:id="@+id/stub_import_reagendar"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_horizontal"--><!--android:inflatedId="@+id/content_import"--><!--android:layout="@layout/inflater_reagendar" />-->
+
+    <!--<ViewStub--><!--android:id="@+id/stub_import_retirar"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_horizontal"--><!--android:inflatedId="@+id/content_import"--><!--android:layout="@layout/inflater_retirar_loja" />-->
+
+    <!--</LinearLayout>-->

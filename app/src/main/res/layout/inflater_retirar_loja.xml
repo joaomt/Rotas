@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inflater_retirar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.pharmamobi.joao.rotas.activity.Activity_reagendar_entrega">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Em qual loja disponivel deseja retirar?"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/rb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:text="Francisco Glicério, 1023, Centro - Campinas - sp" />
+
+    <RadioButton
+        android:id="@+id/rb_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rb_1"
+        android:text="Av Souza de Queiroz, 38, Centro - Valinhos - sp" />
+
+    <RadioButton
+        android:id="@+id/rb_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rb_2"
+        android:text="Rua Maria Monteiro, 688, Cambui - Campinas - sp" />
+
+</RelativeLayout>

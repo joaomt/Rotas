@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detalhes__orcamento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pharmamobi.joao.rotas.activity.Activity_detalhes_Orcamento">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_detalhes_orcamento"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#00bfa5"
+        android:elevation="5dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_pedido_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:text="Pedido 4512"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <ImageButton
+            android:id="@+id/btn_fechar_orc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:onClick="onClick"
+            android:background="@drawable/ic_x"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_detalhes_orcamento">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_status_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_status_orcamento"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="25dp"
+                    app:civ_border_color="#defffefe"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/txt_status_pedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/img_status_orcamento"
+                    android:layout_toRightOf="@+id/img_status_orcamento"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="Calculado"
+                    android:textColor="#313131"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_detalhes_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#0a646464"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:text="Detalhes do pedido"
+                android:textColor="#545454"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_descr_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/txt_itens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Itens:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_obs_itens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Em brave enviaremos informaçoes sobre seu pedido....."
+                    android:textAlignment="center"
+                    android:textColor="#b3b2b2"
+                    android:textSize="22sp" />
+
+                <ListView
+                    android:id="@+id/lv_itens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_itens"
+                    android:clickable="true"
+                    android:divider="#00ffffff"
+                    android:dividerHeight="0dp"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:scrollingCache="false"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_valor_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="R$ 0,00"
+                    android:textColor="#2679ff" />
+
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/txt_valor_total"
+                    android:layout_toStartOf="@+id/txt_valor_total"
+                    android:text="Sub Total"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_anexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_anexo_receita"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0a646464"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
+                    android:text="Anexo Receita"
+                    android:textColor="#545454"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_exibir_anexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_anexo_receita"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_anexo2"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:longClickable="true"
+                    android:paddingLeft="30dp"
+                    android:text="Visualizar Receita"
+                    android:textColor="#00bfa5"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_receber_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#0a646464"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
+                    android:text="Receber no Endereço"
+                    android:textColor="#545454"
+                    android:textSize="18sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_endereco_recebimento"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/txt_receber_local"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="25dp"
+                    android:src="@drawable/ic_home_orc_roxo"
+                    app:civ_border_color="#8f8f8f"
+                    app:civ_border_width="1dp"
+                    app:civ_fill_color="#dedddd" />
+
+                <TextView
+                    android:id="@+id/txt_endereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_receber_local"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/img_endereco_recebimento"
+                    android:layout_toRightOf="@+id/img_endereco_recebimento"
+                    android:maxWidth="200dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_aprovar_orc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_orcamento_aprovado"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:text="Acompanhe seu pedido"
+            android:onClick="onClick"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#00bfa6"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_orcamento_cancelado"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:text="Cancelar Orçamento"
+            android:onClick="onClick"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#f46260"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_aprovar_orcamento"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Aprovar"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            android:background="#00bfa6"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_cancelar_orcamento"
+            android:layout_width="0dp"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="Cancelar"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="#f46260"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</RelativeLayout>

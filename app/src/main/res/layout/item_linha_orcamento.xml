@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:padding="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_status_orcamento"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="25dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#defffefe"/>
+
+    <TextView
+        android:id="@+id/txt_num_pedido"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:textColor="#313131"
+        android:focusable="false"
+        android:layout_toRightOf="@+id/img_status_orcamento"
+        android:layout_toEndOf="@+id/img_status_orcamento"
+        android:layout_alignParentTop="true"
+        android:focusableInTouchMode="false"
+        android:textSize="20sp"
+        android:text="Pedido 22447" />
+    <TextView
+        android:id="@+id/txt_status_orcamento"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_toRightOf="@+id/img_status_orcamento"
+        android:layout_toEndOf="@+id/img_status_orcamento"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_num_pedido"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Orçamento enviado" />
+    <TextView
+        android:id="@+id/txt_valor_orcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:textColor="#20b403"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="R$ 0,00" />
+    </RelativeLayout>
+</LinearLayout>

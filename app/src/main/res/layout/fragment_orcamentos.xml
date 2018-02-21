@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pharmamobi.joao.rotas.FragmentOrcamentos">
+
+        <RelativeLayout
+            android:id="@+id/rl_orcamentos_bad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_bad"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bad_orcamento" />
+
+            <TextView
+                android:id="@+id/txt_bad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Não encontramos nenhum orçamento"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <com.baoyz.widget.PullRefreshLayout
+            android:id="@+id/refresh_orcamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_novo_orc"
+            app:refreshType="material">
+            <ListView
+                android:id="@+id/lv_orcamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="#adb8c2"
+                android:dividerHeight="1dp"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true"
+                android:paddingBottom="35dp"/>
+        </com.baoyz.widget.PullRefreshLayout>
+    <Button
+        android:id="@+id/btn_novo_orc"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00bfa5"
+        android:text="Novo Orçamento"
+        android:textColor="@color/cinza" />
+</RelativeLayout>

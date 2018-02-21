@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pharmamobi.joao.rotas.activity.Activity_definir_end_entrega">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_selec_end"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_casa"
+        android:layout_below="@+id/tb_selec_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <RadioGroup
+            android:id="@+id/rg_casa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/rb_casa_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="-8dp"
+                android:buttonTint="@color/fab_entrega"
+                android:drawableRight="@drawable/ic_home_orc_roxo"
+                android:drawableEnd="@drawable/ic_home_orc_roxo"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:drawablePadding="5dp"
+                android:layoutDirection="rtl"
+                android:text="Rua Antonio Zancanela 68" />
+            <TextView
+                android:id="@+id/txt_rb_casa1_bairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Satelite Ires 3 - Campinas/sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/fab_entrega"/>
+            <RadioButton
+                android:id="@+id/rb_casa_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="-8dp"
+                android:drawableRight="@drawable/ic_home_orc_roxo"
+                android:drawableEnd="@drawable/ic_home_orc_roxo"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:drawablePadding="5dp"
+                android:buttonTint="@color/fab_entrega"
+                android:layoutDirection="rtl"
+                android:text="Av. Francisco Glicério 1029" />
+            <TextView
+                android:id="@+id/txt_rb_casa2_bairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Centro - Campinas/sp"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_loja"
+        android:layout_below="@+id/tb_selec_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <RadioGroup
+            android:id="@+id/rg_loja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/rb_loja_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/fab_entrega"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="-8dp"
+                android:drawableRight="@drawable/ic_maps_pin_roxo"
+                android:drawableEnd="@drawable/ic_maps_pin_roxo"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:drawablePadding="5dp"
+                android:layoutDirection="rtl"
+                android:drawableTint="@color/fab_entrega"
+                android:text="Rua Santa Cruz 66" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Cambui - Campinas/sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/fab_entrega"/>
+            <RadioButton
+                android:id="@+id/rb_loja_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:buttonTint="@color/fab_entrega"
+                android:layout_marginBottom="-8dp"
+                android:drawableRight="@drawable/ic_maps_pin_roxo"
+                android:drawableEnd="@drawable/ic_maps_pin_roxo"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:drawablePadding="5dp"
+                android:layoutDirection="rtl"
+                android:drawableTint="@color/fab_entrega"
+                android:text="Rua Maria Monteiro 1050" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Cambui - Campinas/sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/fab_entrega"/>
+            <RadioButton
+                android:id="@+id/rb_loja_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="-8dp"
+                android:drawableRight="@drawable/ic_maps_pin_roxo"
+                android:drawableEnd="@drawable/ic_maps_pin_roxo"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:drawablePadding="5dp"
+                android:layoutDirection="rtl"
+                android:buttonTint="@color/fab_entrega"
+                android:drawableTint="@color/fab_entrega"
+                android:text="Barão de Jaguara 877" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Centro - Campinas/sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/fab_entrega"/>
+            <RadioButton
+                android:id="@+id/rb_loja_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/fab_entrega"
+                android:textSize="18sp"
+                android:layout_marginBottom="-8dp"
+                android:drawableRight="@drawable/ic_maps_pin_roxo"
+                android:drawableEnd="@drawable/ic_maps_pin_roxo"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:drawablePadding="5dp"
+                android:layoutDirection="rtl"
+                android:drawableTint="@color/fab_entrega"
+                android:text="Av. Dom Nery, 182" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Centro - Valinhos/sp"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</RelativeLayout>

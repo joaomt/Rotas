@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.pharmamobi.joao.rotas.FragmentConta">
+
+    <ScrollView
+        android:id="@+id/scrol_view"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email logado"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_email"
+                    android:text="joao_vitormt@hotmail.com"
+                    android:textColor="@color/preto"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txt_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_email"
+                    android:layout_marginTop="10dp"
+                    android:text="Senha"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txt_senha"
+                    android:background="@drawable/edit_text_login"
+                    android:drawableLeft="@drawable/ic_senha_ca"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_senha_ca"
+                    android:inputType="textPassword"
+                    android:text="senha123"
+                    android:textColor="@color/preto" />
+                <!-- <CheckBox
+                    app:theme="@style/MyRadioButtonStyle"
+                    android:id="@+id/cb_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_senha"
+                    android:text="Mostrar senha"
+                    /> -->
+                <TextView
+                    android:id="@+id/txt_repita_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_senha"
+                    android:layout_marginTop="10dp"
+                    android:text="Repita a nova senha"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_repita_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txt_repita_senha"
+                    android:background="@drawable/edit_text_login"
+                    android:drawableLeft="@drawable/ic_senha_confir"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_senha_confir"
+                    android:inputType="textPassword"
+                    android:textColor="@color/preto" />
+
+                <RadioButton
+                    android:id="@+id/rb_mostrar_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_repita_senha"
+                    android:text="Mostrar senhas"
+                    android:textColor="@color/hint_edt_text" />
+
+                <TextView
+                    android:id="@+id/txt_numero_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb_mostrar_senha"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:text="Informe um meio de contato"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_numero_cliente"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txt_numero_cliente"
+                    android:background="@drawable/edit_text_login"
+                    android:drawableLeft="@drawable/ic_agenda_tel"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_agenda_tel"
+                    android:inputType="number"
+                    android:textColor="@color/preto" />
+                <EditText
+                    android:id="@+id/edt_celular_cliente"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Celular"
+                    android:visibility="gone"
+                    android:layout_below="@+id/txt_numero_cliente"
+                    android:background="@drawable/edit_text_login"
+                    android:drawableLeft="@drawable/ic_celular"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_celular"
+                    android:inputType="number"
+                    android:textColor="@color/preto" />
+                <EditText
+                    android:id="@+id/edt_telefone_cliente"
+                    android:clickable="true"
+                    android:hint="Telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/txt_numero_cliente"
+                    android:background="@drawable/edit_text_login"
+                    android:drawableLeft="@drawable/ic_telefone"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_telefone"
+                    android:inputType="number"
+                    android:textColor="@color/preto" />
+
+                <LinearLayout
+                    android:id="@+id/RL_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_numero_cliente"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical">
+
+                    <ViewStub
+                        android:id="@+id/stub_import"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inflatedId="@+id/content_import"
+                        android:layout="@layout/edt_text_inflater" />
+
+                    <LinearLayout
+                        android:id="@+id/LL_contato"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/ck_celular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Celular"
+                            android:textColor="@color/hint_edt_text" />
+
+                        <CheckBox
+                            android:id="@+id/ck_telefone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Telefone"
+                            android:textColor="@color/hint_edt_text" />
+
+                        <CheckBox
+                            android:id="@+id/ck_ambos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ambos"
+                            android:textColor="@color/hint_edt_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL_btns"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:id="@+id/bt_salvar_perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_salvar_edicoes"
+                    />
+                <TextView
+                    android:id="@+id/txt_bt_salvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_salvar_perfil"
+                    android:layout_marginLeft="6dp"
+                    android:text="Salvar"/>
+
+                <ImageButton
+                    android:id="@+id/bt_cancelar_perfil"
+                    android:layout_toRightOf="@+id/bt_salvar_perfil"
+                    android:layout_toEndOf="@+id/bt_salvar_perfil"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_cancelar_edicoes"
+                    />
+                <TextView
+                    android:id="@+id/txt_bt_cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_cancelar_perfil"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@+id/txt_bt_salvar"
+                    android:layout_toRightOf="@+id/txt_bt_salvar"
+                    android:text="Descartar"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_logof"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:text="Sair"
+        android:drawableRight="@drawable/ic_directions_run_black_24dp"
+        android:drawableTint="#fff"
+        android:drawablePadding="-150dp"
+        android:paddingRight="145dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="#9c56f9"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>

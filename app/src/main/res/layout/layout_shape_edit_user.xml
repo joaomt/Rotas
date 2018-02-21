@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinza"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_perfil_edit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:transitionName="transition1"
+        android:layout_marginBottom="5dp"
+        android:elevation="25dp"
+        android:src="@drawable/ic_user"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#de6e6b6b"/>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_edit_user"
+        android:elevation="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/ic_camera"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txt_alterarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alterar foto"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/linha1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#efeeee" />
+
+        <TextView
+            android:id="@+id/txt_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nome:"
+            android:textColor="#3c3c3d"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_login"
+            android:drawableLeft="@drawable/ic_nome"
+            android:drawablePadding="5dp"
+            android:hint="Nome:"
+            android:textColorHint="@color/hint_edt_text"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_info_nascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nascimento:"
+            android:textColor="#3c3c3d"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_nascimento"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_login"
+            android:drawableLeft="@drawable/ic_calendario"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_calendario"
+            android:paddingBottom="8dp"
+            android:paddingTop="11dp"
+            android:text="Nascimento:"
+            android:textColor="@color/hint_edt_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_info_sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sexo:"
+            android:textColor="#3c3c3d"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_login"
+            android:drawableLeft="@drawable/ic_genero"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_genero"
+            android:paddingBottom="8dp"
+            android:paddingTop="11dp"
+            android:text="Sexo:"
+            android:textColor="@color/hint_edt_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_info_cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sexo:"
+            android:textColor="#3c3c3d"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edt_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_login"
+            android:drawableLeft="@drawable/ic_cpf"
+            android:drawablePadding="5dp"
+            android:hint="Cpf:"
+            android:textColorHint="@color/hint_edt_text"
+            android:inputType="number"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_info_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sexo:"
+            android:textColor="#3c3c3d"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edt_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_login"
+            android:drawableLeft="@drawable/ic_endereco"
+            android:drawablePadding="5dp"
+            android:hint="Endereço:"
+            android:textColorHint="@color/hint_edt_text"
+            android:inputType="textAutoComplete" />
+        <LinearLayout
+            android:id="@+id/RL_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bt_sv_re"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_salvar_edicoes" />
+
+                <TextView
+                    android:id="@+id/txt_bt_salvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Salvar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bt_cancelar_perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bt_cancelar_edicoes" />
+
+                <TextView
+                    android:id="@+id/txt_bt_cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descartar" />
+            </LinearLayout>
+        </LinearLayout>
+       <!-- <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/btn_atualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/borda_view"
+                android:text="Atualizar"
+                android:textColor="@color/branco" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="3dp"
+                android:background="#e95d0d"
+                android:text="Cancelar"
+                android:textColor="@color/branco" />
+        </GridLayout> -->
+    </LinearLayout>
+</RelativeLayout>

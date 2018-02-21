@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/branco"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ic_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_calendario" />
+
+        <TextView
+            android:id="@+id/txt_dt_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/ic_calendar"
+            android:layout_toRightOf="@+id/ic_calendar"
+            android:text="Data Relação:"
+            android:textColor="#343535"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/data_relacao_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_status_boy"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/txt_dt_boy"
+            android:layout_toRightOf="@+id/txt_dt_boy"
+            android:maxLength="10"
+            android:text="17-08-12"
+            android:textColor="#029c7d"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/img_bolinha1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_bolinha_24dp"
+            android:backgroundTint="#26ff00"/>
+        <TextView
+            android:id="@+id/txt_qtd_entregas_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entregues "
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_bolinha1"
+            android:layout_toRightOf="@+id/img_bolinha1"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/img_bolinha2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_qtd_entregas_boy"
+            android:layout_toRightOf="@+id/txt_qtd_entregas_boy"
+            android:background="@drawable/ic_bolinha_24dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#ff0900"/>
+        <TextView
+            android:id="@+id/txt_qtd_entregas_ret_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_bolinha2"
+            android:layout_toRightOf="@+id/img_bolinha2"
+            android:layout_marginRight="10dp"
+            android:text="Retornadas "
+            android:textSize="15sp"/>
+        <ImageView
+            android:id="@+id/img_bolinha3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_qtd_entregas_ret_boy"
+            android:layout_toRightOf="@+id/txt_qtd_entregas_ret_boy"
+            android:background="@drawable/ic_bolinha_24dp"
+            android:backgroundTint="#616161"/>
+        <TextView
+            android:id="@+id/txt_qtd_entregas_aguar_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/img_bolinha3"
+            android:layout_toRightOf="@+id/img_bolinha3"
+            android:text="Aguardando "
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</LinearLayout>

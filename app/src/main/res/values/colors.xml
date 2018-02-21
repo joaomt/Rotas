@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0133fa</color>
+    <color name="colorPrimaryDark">#0e02bc</color>
+    <color name="colorAccent">#f52222</color>
+    <color name="login">#a1585df2</color>
+    <color name="abertura">#37e9ec</color>
+    <color name="status">#19000000</color>
+    <color name="menu">#82c3f4</color>
+    <color name="azulSmoke">#edf5fa</color>
+    <color name="branco">#fff</color>
+    <color name="cinza">#ece7e7</color>
+    <color name="preto">#000</color>
+    <color name="hint_edt_text">#afa9a9</color>
+    <color name="fab_anexo">#00CD66</color>
+    <color name="fab_obs">#FF4500</color>
+    <color name="fab_entrega">#8B008B</color>
+    <color name="txt_fab_orc">#303033</color>
+    <color name="view_spacing">#f7cacaca</color>
+
+</resources>

@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "601759309786",
+    "firebase_url": "https://pharma-mobi.firebaseio.com",
+    "project_id": "pharma-mobi",
+    "storage_bucket": "pharma-mobi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601759309786:android:d10646a23ecedd8f",
+        "android_client_info": {
+          "package_name": "com.pharmamobi.joao.rotas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601759309786-tq8bhrsi3qrhi0pjvomksiij1bab5obm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "601759309786-du00ffgtla056s4247g42i2krp9h8i6h.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "601759309786-rjnebbjf9cu3a5e3r79qcu9vp6anuias.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQtJW-A8IWF6QyydL3xuYDEGdDnvTulUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

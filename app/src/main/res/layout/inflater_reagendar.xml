@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.pharmamobi.joao.rotas.activity.Activity_reagendar_entrega"
+    android:id="@+id/inflater_reagendar"
+    android:orientation="vertical"
+    >
+    <ImageButton
+        android:id="@+id/btn_reagendar_calendario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_calendario"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:longClickable="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual data deseja receber ?"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/txt_data_agendada_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Data agendada"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/txt_data_agendada"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="/   /"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+</LinearLayout>

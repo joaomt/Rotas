@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Activity_avaliar_entrega">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_avaliar_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/toolbar_round_corners"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O que achou de sua entrega ?"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/rt_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:progressTint="#ffd900" />
+
+            <TextView
+                android:id="@+id/txt_nota_entrega"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_achou"
+                android:text="De uma nota a ela"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_spacing" />
+
+            <TextView
+                android:id="@+id/txt_problema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Você teve algum problema com a entrega ?"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:text="Tive problemas com a entrega/produto" />
+
+            <EditText
+                android:id="@+id/edt_obs1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/edit_text_login"
+                android:minHeight="40dp"
+                android:hint="Descreva o que aconteceu.."
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cb_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:text="Não chegou no dia agendado" />
+
+            <EditText
+                android:id="@+id/edt_obs2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/edit_text_login"
+                android:minHeight="40dp"
+                android:hint="Descreva o que aconteceu.."
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cb_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:text="Recebi a entrega conforme prometido" />
+
+            <EditText
+                android:id="@+id/edt_obs3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/edit_text_login"
+                android:minHeight="40dp"
+                android:hint="Obaa! Quer falar algo sobre o que achou de nosso serviço?"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_spacing" />
+
+            <TextView
+                android:id="@+id/txt_sugestao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:text="Sugestão para melhorarmos o atendimento?"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_sugestao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/edit_text_login"
+                android:minHeight="40dp" />
+
+            <Button
+                android:id="@+id/btn_enviarAvaliacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/toolbar_round_corners"
+                android:drawableEnd="@drawable/ic_enviar_avaliar"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_enviar_avaliar"
+                android:elevation="10dp"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:text="Enviar avaliação"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

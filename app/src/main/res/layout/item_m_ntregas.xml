@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Status"/>
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/txt_st"
+            android:text="Entregue"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_conteudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_status"
+            android:background="@color/azulSmoke"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/txt_fm"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Nº Comprovante:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_comprovante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_fm"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/txt_fm"
+                android:layout_toRightOf="@+id/txt_fm"
+                android:textColor="@android:color/black"
+                android:text="#####"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_vl"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_fm"
+                android:layout_marginTop="4dp"
+                android:text="Valor:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_valor_entrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_vl"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@+id/txt_vl"
+                android:layout_toRightOf="@+id/txt_vl"
+                android:text="44,50"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_dt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vl"
+                android:layout_marginTop="4dp"
+                android:text="Data da entrega:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_data_entrega"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:layout_alignBaseline="@+id/txt_dt"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/txt_dt"
+                android:layout_toRightOf="@+id/txt_dt"
+                android:text="##/##/####"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_mais_detalhes"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:text="Mais detalhes"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btn_avalie_entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toEndOf="@+id/btn_mais_detalhes"
+            android:layout_toRightOf="@+id/btn_mais_detalhes"
+            android:background="@null"
+            android:text="Avalie sua entrega"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

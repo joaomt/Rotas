@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.pharmamobi.joao.rotas.ActivityCadastro">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_busca_end"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refreshType="material">
+
+        <ScrollView
+            android:id="@+id/s_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_busc_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Encontraremos seu endereço com seu CEP"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_cep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cep"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/edt_busca_end_cep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Cep"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_campos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/txt_rua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rua"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edt_rua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Rua"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_numero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Número"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edt_numero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Número"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_complemento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complemento"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edt_complemento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Complemento"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_bairro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bairro"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edt_bairro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Bairro"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_cidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cidade"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edt_cidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Cidade"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estado"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edt_estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Estado"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_salvar_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="#3CB371"
+                    android:text="Salvar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/azulSmoke" />
+            </LinearLayout>
+        </ScrollView>
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+</LinearLayout>

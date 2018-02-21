@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.pharmamobi.joao.rotas.activity.Activity_definir_end_entrega">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_selec_end"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.baoyz.widget.PullRefreshLayout
+                android:id="@+id/refresh_def_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:refreshType="material">
+            <ListView
+                android:id="@+id/lv_enderecos_entregas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:cacheColorHint="#00000000"
+                android:divider="#adb8c2"
+                android:dividerHeight="1dp"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true"
+                android:paddingBottom="35dp">
+            </ListView>
+            </com.baoyz.widget.PullRefreshLayout>
+            <Button
+                android:id="@+id/btn_adc_end"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/fab_entrega"
+                android:layout_alignParentBottom="true"
+                android:elevation="10dp"
+                android:text="Adcionar Endereço"
+                android:textAllCaps="false"
+                android:textColor="@color/azulSmoke"
+                android:visibility="visible" />
+        </RelativeLayout>
+</LinearLayout>
